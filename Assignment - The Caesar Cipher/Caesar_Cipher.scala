@@ -7,6 +7,6 @@ object Caesar_Cipher extends App{
 
   val CipherFunction = (f: (Char,String,Int) => Char, alph: String, key:Int , text: String) => text.map(f(_,alph, key))
 
-  println(CipherFunction(encryption,alphabet,17,"helloworld"))
-  println(CipherFunction(decryption,alphabet,17,CipherFunction(encryption,alphabet,17,"helloworld")))
+  println(CipherFunction(encryption,alphabet,17,"hello"))
+  println(CipherFunction(decryption,alphabet,17,CipherFunction(encryption,alphabet,17,"hello")))
 }
