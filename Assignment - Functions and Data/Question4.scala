@@ -27,8 +27,8 @@ object Question4 extends App {
   //Question 4.3
   def finalBalance(l: List[Account]) {
     for (account <- l) {
-      if (account.balance > 0) account.balance = account.balance + account.balance * 1.05
-      else if (account.balance < 0) account.balance = account.balance + account.balance * 1.1
+      if (account.balance > 0) account.balance = account.balance + account.balance * 0.05
+      else if (account.balance < 0) account.balance = account.balance + account.balance * 0.1
     }
   }
 
